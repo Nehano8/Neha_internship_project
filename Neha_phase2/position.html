@@ -5,52 +5,82 @@
 
 <style>
 
-h1 {
+.navbar {
     position: fixed;
-    top: 0;
-    width: 100px;
+    top: 0px;
+    width: 100%;
     background: lightblue;
-    color: black;
+    color: darkblue;
+    padding: 15px;
     text-align: center;
+    font-size: 1cm;
+            
 }
 
 h2 {
-    position: relative;
-    top: 50px;
-    background: lightpink;
+    margin-top: 80px;
+    padding: 20px;
+    font-style: italic;
+    font-size: 30px;
+    color: darkcyan;
+    border-bottom: solid black 1px;
 }
+
 h3 {
-    position: sticky;
-    top: 0px;
-    background: lightgray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.8cm;
+    color: purple;
 }
 
+.card {
+    position: relative; /* important */
+    width: 300px;
+    border: 2px solid black;
+    padding: 10px;
+    margin: auto;
+}
+
+h4 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.5cm;
+    color: purple;
+}
+        
 img {
-    position: static;
     width: 200px;
-    height: 200px;
 }
 
-p {
+.badge {
     position: absolute;
-    color: black;
-    font-size: 20px;
+    top: 10px;
+    right: 10px;
+    background: lightskyblue;
+    color: darkblue;
+    padding: 5px 10px;
 }
 
-
+h5 {
+    position: static;
+    background: lightblue;
+    color: purple;
+    padding: 10px;
+    width: 150px;
+    font-size: 0.5cm;
+        }
 </style>
 </head>
 
 <body>
 
-<h1>Laptops</h1><br>
-<h2>Modern laptops</h2><br>
-<h3>Basic features</h3><br><br><br>
-
-<p>Modern laptops have become an essential part of daily life, offering a perfect combination of performance, portability, and advanced technology.<br>
-     They are widely used in education, business, entertainment, and communication, making them highly versatile devices. <br>Today’s laptops are equipped with powerful processors, high RAM capacity, and fast solid-state drives (SSD), which ensure smooth multitasking and quick data access.<br> Many laptops feature high-resolution displays such as Full HD or even 4K, providing sharp and vibrant visuals for work, gaming, and media consumption.<br><br> In addition, modern laptops are designed to be lightweight and slim, making them easy to carry anywhere.<br>
-<br>
-<img src="https://laptopmedia.com/wp-content/uploads/2025/01/2-65-e1737565103110.jpg">
-
+<div class="navbar"><b>LAPTOPS (fixed)</b></div>
+<h2>Modern laptops</h2>
+<div class="card">
+    <span class="badge">Buy now (absolute)</span>
+        <img src="https://laptopmedia.com/wp-content/uploads/2025/01/2-65-e1737565103110.jpg">
+        <h3>Lenovo LOQ</h3>
+        <h4>Budget friendly gaming laptop.<br>(relative)</h4>
+</div>
+<h5>Discount upto 75% (static)</h5>
+           
 </body>
 </html>
